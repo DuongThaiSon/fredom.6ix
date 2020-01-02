@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+button,input,textarea:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
