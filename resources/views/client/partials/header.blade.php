@@ -1,15 +1,16 @@
+<aside class="promo text-center">
+    <p>miễn phí vận chuyển với đơn hàng trên 500.000 vnđ</p>
+</aside>
 <header id="header" class="header">
-    <div class="site-navbar py-3">
+    <div class="site-navbar py-4">
         <div class="search-wrap">
             <div class="container">
-                <div>
-                    <a href="#" class="search-close js-search-close">
-                        <i class="ti-close"></i>
-                    </a>
-                    <form action="#">
-                        <input type="text" class="form-control" placeholder="Tìm kiếm..." />
-                    </form>
-                </div>
+                <a href="#" class="search-close js-search-close">
+                    <i class="ti-close"></i>
+                </a>
+                <form action="#">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm..." />
+                </form>
             </div>
         </div>
         <div class="container">
@@ -18,7 +19,6 @@
                     <div class="site-logo">
                         <a href="" class="js-logo-clone">
                             <img src="{{ asset('assets/client') }}/images/logo.png" alt="">
-                            <img src="{{ asset('assets/client') }}/images/logo-white.png" alt="" class="logo-white">
                         </a>
                     </div>
                 </div>
@@ -31,10 +31,10 @@
                             <li><a href="">Phụ kiện</a></li>
                             <li><a href="">Bộ sưu tập</a></li>
                             <li><a href="">Liên hệ</a></li>
+                            <li><a href="https://www.instagram.com/fredom.6ix/">Instashop</a></li>
                         </ul>
                     </nav>
                 </div>
-               
                 <div class="icons">
                     <a href="javascript:void(0)" class="icons-btn d-inline-block js-search-open">
                         <span class="ti-search"></span>
@@ -51,31 +51,41 @@
                     </a>
                 </div>
                 <div class="mobile-menu">
-                    <div>
+                    <div class="mobile-menu--head d-flex justify-content-between align-items-center">
+                        <a href="" class="logo">
+                            <img src="{{ asset('assets/client') }}/images/logo.png" alt="">
+                        </a>
                         <a href="javascript:void(0)" class="js-close--menu">
                             <span class="ti-close"></span>
                         </a>
                     </div>
-                    <ul class="p-0">
-                        <li class="active"><a href="">Trang chủ</a></li>
-                        <li><a href="">Quần</a></li>
-                        <li><a href="">Áo</a></li>
-                        <li><a href="">Phụ kiện</a></li>
-                        <li><a href="">Bộ sưu tập</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                    </ul>
+                    <div class="mobile-menu--content">
+                        <ul class="p-0 m-0">
+                            <li class="active">
+                                <a href="">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="">Quần</a>
+                            </li>
+                            <li>
+                                <a href="">Áo</a>
+                            </li>
+                            <li>
+                                <a href="">Phụ kiện</a>
+                            </li>
+                            <li>
+                                <a href="">Bộ sưu tập</a>
+                            </li>
+                            <li>
+                                <a href="">Liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/fredom.6ix/">Instashop</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
-<!-- <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6 p-0">
-            <img src="{{ asset('assets/client') }}/images/1.jpg" alt="">
-        </div>
-        <div class="col-lg-6 p-0">
-            <img src="{{ asset('assets/client') }}/images/2.jpg" alt="">
-        </div>
-    </div>
-</div> -->

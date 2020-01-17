@@ -28,7 +28,18 @@ img {
     max-width: 100%;
 }
 
+img:focus {
+    outline: none !important;
+}
 
+a:focus {
+    color: initial;
+    outline: none !important;
+}
+
+a:hover {
+    color: initial;
+}
 
 
 
@@ -83,7 +94,7 @@ img {
 
 .site-navbar .site-navigation .site-menu>li {
     display: inline-block;
-    padding: 10px 5px;
+    padding: 0 5px;
 }
 
 .site-navbar .site-navigation .site-menu>li>a {
@@ -93,6 +104,7 @@ img {
     color: #25262a;
     font-size: 17px;
     text-decoration: none !important;
+    letter-spacing: 1px;
 }
 
 .site-navbar .site-navigation .site-menu .active>a {
@@ -104,7 +116,6 @@ img {
 }
 
 .site-navbar a {
-    /* color: #868995; */
     font-size: 20px;
 }
 
@@ -145,10 +156,6 @@ img {
     line-height: 40px;
 }
 
-.logo-white {
-    display: none;
-}
-
 .search-wrap.active {
     opacity: 1;
     visibility: visible;
@@ -174,9 +181,9 @@ img {
 .mobile-menu {
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -100%;
     z-index: 2000;
-    padding: 20px;
+    padding: 10px 0;
     background: #fff;
     height: 100%;
     border-left: 1px solid #eaeaea;
@@ -196,7 +203,43 @@ img {
 }
 
 .is-collapsed-mobile .site-wrap {
-    right: 200px;
+    right: 66%;
+}
+
+.mobile-menu--head {
+    padding: 0 15px 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.mobile-menu--content {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.mobile-menu--content li {
+    padding: 5px;
+}
+
+.mobile-menu--content a {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.mobile-menu {
+    width: 66%;
+}
+
+.promo {
+    background-color: #ffd5d5;
+    color: #000;
+    font-size: 0.7em;
+    padding: 0.5em 1em;
+}
+
+.promo p {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 
@@ -211,15 +254,7 @@ img {
 
 
 
-
-
-
-
-@media (max-width: 575px) {
-    .mobile-menu {
-        width: 200px;
-    }
-}
+@media (max-width: 575px) {}
 
 @media(max-width:991px) {
     .logo img {
@@ -228,6 +263,12 @@ img {
 
     .site-navbar {
         padding: 10px 0 !important;
+    }
+
+}
+@media(min-width:992px) and (max-width: 1024px) {
+    .site-navbar .site-navigation .site-menu>li {
+        padding: 0;
     }
 
 }
