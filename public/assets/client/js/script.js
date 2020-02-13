@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    //aos
+    AOS.init();
+
     //search
     var searchShow = function () {
         var searchWrap = $('.search-wrap');
@@ -34,4 +37,72 @@ $(document).ready(function () {
         }
     });
 
+    //promo
+    $('.marquee').marquee();
+    $('.js-close--promo').click(function () {
+        $('.promo').addClass('d-none');
+    })
+
+
+    //banner slide
+    $('#banner').owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='ti-angle-left'></i>", "<i class='ti-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            1000: {
+                items: 1,
+            }
+        }
+    })
+
+    //collection slide
+    $('#collection').owlCarousel({
+        loop: true,
+        // autoplay:true,
+        responsiveClass: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='ti-angle-left'></i>", "<i class='ti-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            1000: {
+                items: 1,
+            }
+        }
+    })
+
+    //intro slide
+    $('#intro').owlCarousel({
+        loop: true,
+        // autoplay:true,
+        responsiveClass: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='ti-angle-left'></i>", "<i class='ti-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            1000: {
+                items: 1,
+            }
+        }
+    })
 })

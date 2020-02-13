@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ asset('assets/client') }}/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="{{ asset('assets/client') }}/css/themify-icons.css">
     <script src="https://kit.fontawesome.com/540cf737fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ asset('assets/client') }}/css/aos.css">
+    <link rel="stylesheet" href="{{ asset('assets/client') }}/css/animate.min.css">
     <link rel="stylesheet" href="{{ asset('assets/client') }}/css/style.css">
 </head>
 
@@ -23,7 +25,9 @@
     <script src="{{ asset('assets/client') }}/js/jquery.min.js"></script>
     <script src="{{ asset('assets/client') }}/js/popper.min.js"></script>
     <script src="{{ asset('assets/client') }}/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/client') }}/js/jquery.marquee.min.js"></script>
     <script src="{{ asset('assets/client') }}/js/owl.carousel.min.js"></script>
+    <script src="{{ asset('assets/client') }}/js/aos.js"></script>
     <script src="{{ asset('assets/client') }}/js/script.js"></script>
 </body>
 

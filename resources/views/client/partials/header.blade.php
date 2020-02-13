@@ -1,6 +1,11 @@
-<aside class="promo text-center">
-    <p>miễn phí vận chuyển với đơn hàng trên 500.000 vnđ</p>
-</aside>
+<div class="promo">
+    <div class="marquee" data-speed="100">
+        <p>miễn phí vận chuyển với đơn hàng trên 500.000 vnđ</p>
+    </div>
+    <a href="javascript:void(0)" class="js-close--promo">
+        <span class="ti-close"></span>
+    </a>
+</div>
 <header id="header" class="header">
     <div class="site-navbar py-4">
         <div class="search-wrap">

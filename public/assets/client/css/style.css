@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     font-size: 15px;
+    color: #0e00ff;
 }
 
 a:hover {
@@ -102,9 +105,9 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: .05em;
     color: #25262a;
-    font-size: 17px;
+    font-size: 18px;
     text-decoration: none !important;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
 }
 
 .site-navbar .site-navigation .site-menu .active>a {
@@ -230,10 +233,13 @@ a:hover {
 }
 
 .promo {
-    background-color: #ffd5d5;
+    background-color: #f7e9e2;
     color: #000;
     font-size: 0.7em;
     padding: 0.5em 1em;
+    position: relative;
+    transition: .3s all ease-in-out;
+
 }
 
 .promo p {
@@ -242,6 +248,198 @@ a:hover {
     letter-spacing: 1px;
 }
 
+.marquee {
+    overflow: hidden;
+}
+
+.js-close--promo {
+    position: absolute;
+    right: 0;
+    padding: 0 20px;
+    background: #f7e9e2;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#banner,
+#collection {
+    position: relative;
+}
+
+#banner .owl-nav {
+    margin: 0;
+}
+
+#banner .owl-nav .owl-prev {
+    left: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    font-size: 50px;
+    margin: 0;
+    color: #fff;
+}
+
+#banner .owl-nav .owl-next {
+    right: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    font-size: 50px;
+    margin: 0;
+    color: #fff;
+}
+
+#banner .owl-nav button:hover {
+    background: none;
+}
+
+.welcome {
+    padding: 120px 0 80px;
+}
+
+.welcome-img img{
+    height: 75vh;
+}
+.welcome-content h2 {
+    font-size: 3.2rem;
+}
+
+.welcome-content p {
+    font-size: 18px;
+}
+
+#collection .owl-nav .owl-prev {
+    left: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    font-size: 50px;
+    margin: 0;
+    color: #d0d0d0;
+}
+
+#collection .owl-nav .owl-next {
+    right: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    font-size: 50px;
+    margin: 0;
+    color: #d0d0d0;
+}
+
+#collection .owl-nav button:hover {
+    background: none;
+}
+
+.collection-item {
+    position: relative;
+}
+
+.collection-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.collection-content {
+    margin: 60px;
+    padding: 60px;
+    height: 290px;
+    width: 25%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.collection-content--title {
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.collection-content--des {
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 42px;
+}
+
+.btn-discover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #0e00ff;
+    border: 1px solid #0e00ff;
+    box-shadow: none;
+    padding: 14px 28px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.15s ease;
+    text-transform: uppercase;
+}
+
+.btn-discover:hover {
+    background-color: #0e00ff;
+    color: #fff;
+}
+
+.intro-content--box span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #071b97;
+}
+
+.intro-content--box p {
+    font-size: 22px;
+    line-height: 40px;
+    color: #2e0b72c2;
+}
+
+.intro-content--author strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 2px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #071b97;
+}
+
+#intro .owl-nav .owl-prev {
+    left: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    font-size: 50px;
+    margin: 0;
+    color: #d0d0d0;
+}
+
+#intro .owl-nav .owl-next {
+    right: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    font-size: 50px;
+    margin: 0;
+    color: #d0d0d0;
+}
+
+#intro .owl-nav button:hover {
+    background: none;
+}
 
 
 
@@ -254,8 +452,63 @@ a:hover {
 
 
 
-@media (max-width: 575px) {}
 
+
+
+
+
+@media (max-width: 575px) {
+    #banner .owl-nav .owl-prev {
+        font-size: 25px;
+    }
+
+    #banner .owl-nav .owl-next {
+        font-size: 25px;
+    }
+    #collection .owl-nav .owl-next {
+        font-size: 25px;
+    }
+    #collection .owl-nav .owl-prev {
+        font-size: 25px;
+    }
+    #intro .owl-nav .owl-next {
+        font-size: 25px;
+    }
+    #intro .owl-nav .owl-prev {
+        font-size: 25px;
+    }
+    .welcome{
+        padding: 80px 0;
+    }
+}
+
+@media(max-width:767px) {
+    .collection-wrap {
+        align-items: center;
+        justify-content: center;
+    }
+    .collection-content {
+        margin: 30px;
+        padding: 20px;
+        height: auto;
+        width: 100%;
+    }
+    .collection-content--title {
+        font-size: 1.5rem;
+    }
+    .welcome-content h2{
+        font-size: 2.8rem;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .collection-content {
+        /* margin: 30px; */
+        padding: 30px;
+        height: auto;
+        width: 50%;
+    }
+}
 @media(max-width:991px) {
     .logo img {
         width: 50px;
@@ -264,8 +517,18 @@ a:hover {
     .site-navbar {
         padding: 10px 0 !important;
     }
+    .collection-content--des {
+        margin-bottom: 1em;
+    }
 
+    .welcome-content {
+        margin-top: 60px;
+    }
+    .welcome-img img{
+        height: 50vh;
+    }
 }
+
 @media(min-width:992px) and (max-width: 1024px) {
     .site-navbar .site-navigation .site-menu>li {
         padding: 0;
