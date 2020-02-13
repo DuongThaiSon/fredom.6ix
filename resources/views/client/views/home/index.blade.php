@@ -16,12 +16,12 @@
 <section class="welcome">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="welcome-img d-flex justify-content-center">
                     <img src="{{ asset('assets/client') }}/images/1.jpg" alt="">
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="col-lg-8 mx-auto d-flex align-items-center h-100">
                     <div class="welcome-content">
                         <h2 class="mb-3 animated bounce">Welcome</h2>
@@ -88,6 +88,121 @@
                         <img src="{{ asset('assets/client') }}/images/logo.png" alt="">
                     </div>
                     <strong>fredom.6ix</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="product" class="owl-carousel owl-theme">
+    <div class="product-item">
+        <div class="product-item--wrap">
+            <p class="product-title--mobile">shop the look</p>
+            <div class="product-image">
+                <div class="product-image--bg" style="background-image: url('{{ asset('assets/client') }}/images/product-bg-1.jpg')">
+                
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="product-content--item">
+                    <a href="" class="product-link">
+                        <div class="product-double--image">
+                            <div class="product-double--front" style="background-image: url('{{ asset('assets/client') }}/images/9.jpg')">
+
+                            </div>
+                            <div class="product-double--under" style="background-image: url('{{ asset('assets/client') }}/images/10.jpg')">
+
+                            </div>
+                        </div>
+                        <div class="product-content--info">
+                            <h3 class="title">Lemon croptop</h3>
+                            <span class="price">450.000 VNĐ</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-item">
+        <div class="product-item--wrap">
+            <p class="product-title--mobile">shop the look</p>
+            <div class="product-image">
+                <div class="product-image--bg" style="background-image: url('{{ asset('assets/client') }}/images/15.jpg')">
+                
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="product-content--item">
+                    <a href="" class="product-link">
+                        <div class="product-double--image">
+                            <div class="product-double--front" style="background-image: url('{{ asset('assets/client') }}/images/7.jpg')">
+
+                            </div>
+                            <div class="product-double--under" style="background-image: url('{{ asset('assets/client') }}/images/16.jpg')">
+
+                            </div>
+                        </div>
+                        <div class="product-content--info">
+                            <h3 class="title">glow shirt</h3>
+                            <span class="price">450.000 VNĐ</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-item">
+        <div class="product-item--wrap">
+            <p class="product-title--mobile">shop the look</p>
+            <div class="product-image">
+                <div class="product-image--bg" style="background-image: url('{{ asset('assets/client') }}/images/4.jpg')">
+                
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="product-content--item">
+                    <a href="" class="product-link">
+                        <div class="product-double--image">
+                            <div class="product-double--front" style="background-image: url('{{ asset('assets/client') }}/images/8.jpg')">
+
+                            </div>
+                            <div class="product-double--under" style="background-image: url('{{ asset('assets/client') }}/images/6.jpg')">
+
+                            </div>
+                        </div>
+                        <div class="product-content--info">
+                            <h3 class="title">lemon hoodie</h3>
+                            <span class="price">450.000 VNĐ</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-item">
+        <div class="product-item--wrap">
+            <p class="product-title--mobile">shop the look</p>
+            <div class="product-image">
+                <div class="product-image--bg" style="background-image: url('{{ asset('assets/client') }}/images/25.jpg')">
+                
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="product-content--item">
+                    <a href="" class="product-link">
+                        <div class="product-double--image">
+                            <div class="product-double--front" style="background-image: url('{{ asset('assets/client') }}/images/27.jpg')">
+
+                            </div>
+                            <div class="product-double--under" style="background-image: url('{{ asset('assets/client') }}/images/26.jpg')">
+
+                            </div>
+                        </div>
+                        <div class="product-content--info">
+                            <h3 class="title">lemon pant</h3>
+                            <span class="price">700.000 VNĐ</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

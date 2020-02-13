@@ -36,18 +36,17 @@
                             <li><a href="">Phụ kiện</a></li>
                             <li><a href="">Bộ sưu tập</a></li>
                             <li><a href="">Liên hệ</a></li>
-                            <li><a href="https://www.instagram.com/fredom.6ix/">Instashop</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="icons">
-                    <a href="javascript:void(0)" class="icons-btn d-inline-block js-search-open">
+                    <a href="javascript:void(0)" class="icons-btn d-inline-block js-search-open" title="Tìm kiếm">
                         <span class="ti-search"></span>
                     </a>
-                    <a href="" class="icons-btn d-inline-block">
+                    <a href="" class="icons-btn d-inline-block" title="Tài khoản">
                         <span class="ti-user"></span>
                     </a>
-                    <a href="" class="icons-btn d-inline-block bag">
+                    <a href="" class="icons-btn d-inline-block bag" title="Giỏ hàng">
                         <span class="ti-shopping-cart"></span>
                         <span class="number">2</span>
                     </a>

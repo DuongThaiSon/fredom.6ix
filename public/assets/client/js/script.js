@@ -43,6 +43,18 @@ $(document).ready(function () {
         $('.promo').addClass('d-none');
     })
 
+    //fixed header
+    var siteScroll = function () {
+        $(window).scroll(function () {
+            var st = $(this).scrollTop();
+            if(st > 20){
+                $('.header').addClass('fixed-header');
+            } else{
+                $('.header').removeClass('fixed-header');
+            }
+        })
+    }
+    siteScroll();
 
     //banner slide
     $('#banner').owlCarousel({
@@ -87,6 +99,27 @@ $(document).ready(function () {
 
     //intro slide
     $('#intro').owlCarousel({
+        loop: true,
+        // autoplay:true,
+        responsiveClass: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='ti-angle-left'></i>", "<i class='ti-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            1000: {
+                items: 1,
+            }
+        }
+    })
+
+    //product slide
+    $('#product').owlCarousel({
         loop: true,
         // autoplay:true,
         responsiveClass: true,
